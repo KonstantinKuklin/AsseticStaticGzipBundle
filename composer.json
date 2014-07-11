@@ -1,0 +1,24 @@
+{
+    "name": "konstantin-kuklin/assetic-static-gzip-bundle",
+    "description": "Provide static gzip compression for css,js files via AsseticBundle",
+    "keywords": ["assets", "compression", "minification", "gzip"],
+    "homepage": "https://github.com/konstantin-kuklin/AsseticStaticGzipBundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Konstantin Kuklin",
+            "email": "konstantin.kuklin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "KonstantinKuklin\\AsseticStaticGzipBundle\\": "src/AsseticStaticGzipBundle"
+        }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/assetic-bundle": ">=2.3"
+    }
+}
