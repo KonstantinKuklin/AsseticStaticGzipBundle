@@ -3,17 +3,21 @@ What is AsseticStaticGzipBundle?
 -----------------
 
 AsseticStaticGzipBundle is a bundle witch provide functional for creating gzipped versions of your css and js files.
+
 It work with AsseticBundle and do it transparently, you don't need to modify your code.
 
 Motivation
 -----------------
 Nginx web server can sent compress data in real time. Also nginx can sent already compressed file.
+
 Nginx plugin: http://nginx.org/en/docs/http/ngx_http_gzip_static_module.html
+
 Saving CPU time.
 
 Requirements
 ------------
 Zip extension http://php.net/manual/en/zip.installation.php
+
 PHP 5.3 and UP
 
 Installation
@@ -30,10 +34,14 @@ assetic_static_gzip:
     use: true
     level: 9
    ```
+   
 Option `level` can be 0-9 and provide level of gzip compression type. 
-    9 - best, 
-    0 - without
-Option `use` enables or disables compression
+
+ 9 - best
+ 
+ 0 - without
+    
+Option `use` enables or disables creating compression files
 
 Add bundle to `app/AppKernel.php`:
    ```
