@@ -34,7 +34,12 @@ Option `level` can be 0-9 and provide level of gzip compression type.
     9 - best, 
     0 - without
 Option `use` enables or disables compression
-   
+
+Add bundle to `app/AppKernel.php`:
+   ```
+new KonstantinKuklin\AsseticStaticGzipBundle\AsseticStaticGzipBundle()
+   ```
+
 Documentation
 ------------
 
