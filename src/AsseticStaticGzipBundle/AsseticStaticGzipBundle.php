@@ -7,7 +7,7 @@ namespace KonstantinKuklin\AsseticStaticGzipBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class AsseticGzipBundle extends Bundle
+class AsseticStaticGzipBundle extends Bundle
 {
     /**
      * Override Assetic bundle
