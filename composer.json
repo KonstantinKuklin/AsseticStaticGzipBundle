@@ -2,7 +2,7 @@
     "name": "konstantin-kuklin/assetic-static-gzip-bundle",
     "description": "Provide static gzip compression for css,js files via AsseticBundle",
     "keywords": ["assets", "compression", "minification", "gzip"],
-    "homepage": "https://github.com/konstantin-kuklin/AsseticStaticGzipBundle",
+    "homepage": "https://github.com/KonstantinKuklin/AsseticStaticGzipBundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "minimum-stability": "dev",
