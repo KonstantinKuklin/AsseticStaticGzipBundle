@@ -5,7 +5,6 @@
     "homepage": "https://github.com/KonstantinKuklin/AsseticStaticGzipBundle",
     "type": "symfony-bundle",
     "license": "MIT",
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Konstantin Kuklin",
@@ -13,9 +12,7 @@
         }
     ],
     "autoload": {
-        "psr-4": {
-            "KonstantinKuklin\\AsseticStaticGzipBundle\\": "src/AsseticStaticGzipBundle"
-        }
+        "psr-4": {"KonstantinKuklin\\AsseticStaticGzipBundle\\": ""}
     },
     "require": {
         "php": ">=5.3.3",
