@@ -2,13 +2,13 @@
 What is AsseticStaticGzipBundle?
 -----------------
 
-AsseticStaticGzipBundle is a bundle witch provide functional for creating gzipped versions of your css and js files.
+AsseticStaticGzipBundle is a bundle which creates gzipped versions of your css and js files.
 
-It work with AsseticBundle and do it transparently, you don't need to modify your code.
+It works transparently with AsseticBundle so you don't need to modify your code.
 
 Motivation
 -----------------
-Nginx web server can sent compress data in real time. Also nginx can sent already compressed file.
+Nginx web server can compress response data on the fly. To save time it can be configured to send an already compressed copy of a file.
 
 Nginx plugin: http://nginx.org/en/docs/http/ngx_http_gzip_static_module.html
 
