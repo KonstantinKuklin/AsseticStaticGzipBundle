@@ -25,7 +25,7 @@ Installation
 
 via Composer:
    ```
-php composer.phar require konstantin-kuklin/assetic-static-gzip-bundle:dev-master  
+php composer.phar require konstantin-kuklin/assetic-static-gzip-bundle  
    ```
 Add to your config file:
 
