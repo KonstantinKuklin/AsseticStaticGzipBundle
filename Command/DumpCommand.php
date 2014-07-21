@@ -36,7 +36,7 @@ function file_put_contents($filePath, $content)
     if (GzipProperties::$use) {
 
         // check gzip extension
-        if (!function_exists("gzcompress")) {
+        if (!function_exists("gzencode")) {
             throw new \RuntimeException('Unable to find Zlib library');
         }
 
@@ -49,7 +49,7 @@ function file_put_contents($filePath, $content)
             )
         );
 
-        if (false === @\file_put_contents($filePath, gzcompress($content, GzipProperties::$level))) {
+        if (false === @\file_put_contents($filePath, gzencode($content, GzipProperties::$level))) {
             throw new \RuntimeException('Unable to write file ' . $filePath);
         }
     }
