@@ -2,12 +2,14 @@
 
 namespace KonstantinKuklin\AsseticStaticGzipBundle\DependencyInjection;
 
-use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
-use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
-use Symfony\Component\Config\FileLocator;
 
+/**
+ * Class AsseticStaticGzipExtension
+ *
+ * @author Konstantin Kuklin <konstantin.kuklin@gmail.com>
+ */
 class AsseticStaticGzipExtension extends Extension
 {
     /**
