@@ -1,18 +1,18 @@
 <?php
-/**
- * @author KonstantinKuklin <konstantin.kuklin@gmail.com>
- */
 
 namespace KonstantinKuklin\AsseticStaticGzipBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
+/**
+ * Class AsseticStaticGzipBundle
+ *
+ * @author KonstantinKuklin <konstantin.kuklin@gmail.com>
+ */
 class AsseticStaticGzipBundle extends Bundle
 {
     /**
-     * Override Assetic bundle
-     *
-     * @return string
+     * {@inheritdoc}
      */
     public function getParent()
     {

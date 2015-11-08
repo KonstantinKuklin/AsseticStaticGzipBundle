@@ -1,7 +1,4 @@
 <?php
-/**
- * @author KonstantinKuklin <konstantin.kuklin@gmail.com>
- */
 
 namespace Symfony\Bundle\AsseticBundle\Command;
 
@@ -10,13 +7,29 @@ use Symfony\Component\Console\Output\OutputInterface;
 /**
  * Class GzipProperties for wrapping variables to file_put_contents
  *
- * @package Symfony\Bundle\AsseticBundle\Command
+ * @author KonstantinKuklin <konstantin.kuklin@gmail.com>
  */
 class GzipProperties
 {
-    public static $use = null;
-    public static $level = null;
-    /** @var OutputInterface */
+    /**
+     * Is compression enabled
+     *
+     * @var bool
+     */
+    public static $use = false;
+
+    /**
+     * Level of compression
+     *
+     * @var int
+     */
+    public static $level = 9;
+
+    /**
+     * Output flow interface
+     *
+     * @var OutputInterface
+     */
     public static $output = null;
 }
 
@@ -24,8 +37,8 @@ class GzipProperties
  * Override standard function file_put_contents for
  * Symfony\Bundle\AsseticBundle\Command namespace
  *
- * @param string $filePath
- * @param string $content
+ * @param string $filePath Assetic file path
+ * @param string $content  Assetic file content
  */
 function file_put_contents($filePath, $content)
 {
